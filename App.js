@@ -1,14 +1,13 @@
-import React, {Fragment} from 'react';
-import {Text} from 'react-native';
+// React.
+import React, { Fragment } from 'react';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <Text>Is athis b</Text>
-      </Fragment>
-    );
-  }
+// Native Components.
+import { Text } from 'react-native';
+
+export default function App() {
+  return (
+    <Fragment>
+      <Text>Hello, World!</Text>
+    </Fragment>
+  );
 }
-
-export default App;
