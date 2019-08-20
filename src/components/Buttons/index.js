@@ -12,25 +12,25 @@ import { ButtonsContainer, StyledRejectPersonButton, StyledAcceptPersonButton } 
 
 // Constants.
 import APP_COLORS from '../../constants/colors';
-import { boxShadow } from '../../global-styles';
+import { globalStyles } from '../../global-styles';
 
 export default function RejectAndAcceptButtons({
     navigation
 }) {
     function onAcceptHandler() {
-        return navigation.navigate('AnotherOne')
+        return navigation.navigate('Home')
     };
 
     function onRejectHandler() {
-        return navigation.navigate('AnotherOne')
+        return navigation.navigate('Home')
     };
 
     return (
         <ButtonsContainer>
-            <StyledRejectPersonButton style={boxShadow.boxShadow} title="Reject" onPress={onRejectHandler}>
+            <StyledRejectPersonButton style={globalStyles.boxShadow} title="Reject" onPress={onRejectHandler}>
                 <Icon name="heart-broken-outline" size={50} color={APP_COLORS.LOW_OPACITY_PURPLE} />
             </StyledRejectPersonButton>
-            <StyledAcceptPersonButton style={boxShadow.boxShadow} title="Accept" onPress={onAcceptHandler}>
+            <StyledAcceptPersonButton style={globalStyles.boxShadow} title="Accept" onPress={onAcceptHandler}>
                 <Icon name="heart-outline" size={50} color={APP_COLORS.MAIN_COLOR} />
             </StyledAcceptPersonButton>
         </ButtonsContainer>
