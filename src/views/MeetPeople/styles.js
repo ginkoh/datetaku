@@ -7,7 +7,7 @@ import APP_COLORS from '../../constants/colors';
 export const Container = styled.ScrollView`
     flex: 1;
     flex-direction: column;
-    background: ${APP_COLORS.MAIN_COLOR};
+    background: ${APP_COLORS.WHITE};
 `;
 
 export const MeetPeopleHeaderContainer = styled.View`
