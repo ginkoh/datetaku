@@ -11,14 +11,17 @@ import MeetPeople from './views/MeetPeople/index';
 /**
  * TODO: Find how to apply styles to the stack navigator.
  */
-
 export const MainNavigator = createStackNavigator(
     {
-        MeetPeople: { screen: MeetPeople },
-        AnotherOne: { screen: Home },
+        MeetPeople: {
+            screen: MeetPeople,
+        },
+        Home: { screen: Home },
     },
     {
-        initialRouteName: 'MeetPeople'
+        headerMode: 'none',
+        initialRouteName: 'MeetPeople',
+        // initialRouteName: 'Home'
     });
 
 const AppMain = createAppContainer(MainNavigator);
