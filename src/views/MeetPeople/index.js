@@ -40,7 +40,7 @@ export default function MeetPeople({
                     marginTop: 20,
                     alignSelf: 'center'
                 }}>
-                Meet People Page
+                Conheça Otakus
             </Text>
             <Card />
             <RejectAndAcceptButtons navigation={navigation}></RejectAndAcceptButtons>
