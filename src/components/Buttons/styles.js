@@ -9,8 +9,8 @@ export const widthAndHeight = `
 export const buttonsCommon = `
     border-radius: 50;
     background: #fff;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     margin: 0 20px;
     justify-content: center;
     align-items: center;
@@ -26,9 +26,11 @@ export const ButtonsContainer = styled.View`
 `;
 
 export const StyledRejectPersonButton = styled.TouchableOpacity`
-    ${buttonsCommon}
+    ${buttonsCommon};
+    margin-bottom: 5px;
 `;
 
 export const StyledAcceptPersonButton = styled.TouchableOpacity`
-    ${buttonsCommon}
+    ${buttonsCommon};
+    margin-bottom: 5px;
 `;

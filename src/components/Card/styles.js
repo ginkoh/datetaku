@@ -9,13 +9,12 @@ import APP_COLORS from '../../constants/colors';
 
 export const CardContainer = styled.View`
     position: relative;
-    height: 300px;
-    margin: 0 20px;
+    height: 260px;
+    margin: 0 45px;
 `;
 
 export const CardTitleContainer = styled.View`
     flex-direction: row;
-    
 
     align-items: center;
 
@@ -35,7 +34,7 @@ export const CardTitleContainer = styled.View`
 `;
 
 export const CardTitleText = styled.Text`
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #fff;
     margin-left: 10px;
@@ -66,8 +65,8 @@ export const CardImage = styled.Image`
 
 export const CardAboutElipseContainer = styled.TouchableOpacity`
     position: absolute;
-    bottom: -15;
-    right: -25;
+    bottom: -20;
+    right: -35;
     z-index: 15;
 
     ${buttonsCommon}
