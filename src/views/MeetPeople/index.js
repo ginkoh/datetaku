@@ -11,11 +11,12 @@ import { Text, Image } from 'react-native';
 // Custom Components.
 import Card from '../../components/Card/index';
 import RejectAndAcceptButtons from '../../components/Buttons/index';
+import APP_COLORS from '../../constants/colors';
 
 export function MeetPeopleHeader() {
     return (
         <MeetPeopleHeaderContainer>
-            <MeetPeopleHeaderLogo source={require('../../assets/logo_branco.png')}></MeetPeopleHeaderLogo>
+            <MeetPeopleHeaderLogo source={require('../../assets/logo_roxo.png')}></MeetPeopleHeaderLogo>
         </MeetPeopleHeaderContainer>
     );
 };
