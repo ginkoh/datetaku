@@ -34,8 +34,9 @@ export default function MeetPeople({
             <MeetPeopleHeader />
             <Text
                 style={{
-                    fontSize: 30,
-                    color: '#fff',
+                    fontSize: 25,
+                    fontWeight: 'bold',
+                    color: APP_COLORS.MAIN_COLOR,
                     marginBottom: 20,
                     marginTop: 20,
                     alignSelf: 'center'
