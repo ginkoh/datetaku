@@ -11,7 +11,7 @@ import {
     CloseModalButton,
     SendModalButton
 } from './styles';
-import { boxShadow } from '../../global-styles';
+import { globalStyles } from '../../global-styles';
 
 // Libraries.
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -35,10 +35,10 @@ export default function ObservationModal({
         >
             <ObservationModalContainer>
                 <ButtonsContainer>
-                    <CloseModalButton style={boxShadow.boxShadow} onPress={closeModal}>
+                    <CloseModalButton style={globalStyles.boxShadow} onPress={closeModal}>
                         <Icon name="close" size={30} color={APP_COLORS.LOW_OPACITY_PURPLE} />
                     </CloseModalButton>
-                    <SendModalButton style={boxShadow.boxShadow} onPress={sendObservation}>
+                    <SendModalButton style={globalStyles.boxShadow} onPress={sendObservation}>
                         <Icon name="check" size={30} color={APP_COLORS.MAIN_COLOR} />
                     </SendModalButton>
                 </ButtonsContainer>

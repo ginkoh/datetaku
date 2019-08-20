@@ -19,11 +19,7 @@ import {
     CardAboutElipseContainer
 } from './styles';
 
-import { boxShadow } from '../../global-styles';
-
-/**
- * goodbye people!!!
- */
+import { globalStyles } from '../../global-styles';
 
 export function CardAboutElipse() {
     const [modalVisible, setModalVisible] = useState(false);
@@ -43,8 +39,15 @@ export function CardAboutElipse() {
 
     return (
         <>
-            <ObservationModal modalVisible={modalVisible} closeModal={onCloseModal} sendObservation={onSendObservation} />
-            <CardAboutElipseContainer style={boxShadow.boxShadow} onPress={openModal}>
+            <ObservationModal
+                modalVisible={modalVisible}
+                closeModal={onCloseModal}
+                sendObservation={onSendObservation}
+            />
+            <CardAboutElipseContainer
+                style={globalStyles.boxShadow}
+                onPress={openModal}
+            >
                 <Icon name="comment" size={30} color="#c27cf7" />
             </CardAboutElipseContainer>
         </>
@@ -64,7 +67,7 @@ export function CardTitle({
 
 export default function Card() {
     return (
-        <CardContainer>
+        <CardContainer style={globalStyles.boxShadow}>
             <CardTitle name="Daniela Souza, 20 - Mato Grosso" />
             <CardImage source={require('../../assets/girl.jpeg')} />
         </CardContainer>
